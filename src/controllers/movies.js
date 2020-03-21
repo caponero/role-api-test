@@ -24,6 +24,12 @@ module.exports = {
 		res.status(200).json(movie);
 	},
 
+	delMovie: async (req, res, next) => {
+		const { movieId } = req.params;
+		const movie = await Movie.findByIdAndDelete(movieId);
+		res.status(200).json(movie);
+	},
+
 	/* replaceMovie: async (req, res, next) => {
 		const { movieId } = req.params;
 		const newMovie = req.body;

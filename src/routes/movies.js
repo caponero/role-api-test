@@ -11,6 +11,8 @@ router.route('/')
 
 router.route('/:movieId')
 	.get(MovieController.getMovie)
+	.delete(MovieController.delMovie)
+	
 	//.put(MovieController.replaceMovie)
 	//.patch(MovieController.updateMovie)
 

@@ -14,10 +14,11 @@ const movies = require('./routes/movies');
 		useUnifiedTopology: true
 	}); */
 
-	mongoose.connect('mongodb+srv://appmovies:ggKVInnq931uUjAR@cluster0-lgawc.mongodb.net/movies?retryWrites=true&w=majority',
-	{ 	useNewUrlParser: true, 
-		useUnifiedTopology: true
-	}); 
+mongoose.connect('mongodb+srv://appmovies:ggKVInnq931uUjAR@cluster0-lgawc.mongodb.net/movies?retryWrites=true&w=majority',
+{
+	useNewUrlParser: true, 
+	useUnifiedTopology: true
+}); 
 
 // settings
 app.set('port', process.env.PORT || 3000);
